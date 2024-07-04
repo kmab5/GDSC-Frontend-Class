@@ -3,11 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/favicon2.png" type="image/x-icon">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <nav class="navbar">
+            <p class="title">NIMBUS</p>
+            <span class="spacer"></span>
+            <span class="spacer"></span>
+            <span class="spacer"></span>
+            <div class="rightnav">
+                <p class="subtitle"><a href="#" class="link subtitle">Home</a></p>
+                <p class="subtitle"><a href="#" class="link subtitle">Services</a></p>
+                <p class="subtitle"><a href="index.html" class="link subtitle">Contact Us</a></p>
+                <span class="drawer">
+                    <img src="src/drawer.png" alt="drawer" id="drawericon">
+                    <span class="dropdown">
+                        <ul>
+                            <li class="subtitle"><a href="#" class="link">About Me</a></li>
+                            <li class="subtitle"><a href="#" class="link">Projects</a></li>
+                            <li class="subtitle"><a href="#" class="link">Games</a></li>
+                            <li class="subtitle"><a href="#" class="link">Contract Me</a></li>
+                        </ul>
+                    </span>
+                </span>
+            </div>
+        </nav>
+        <div class="meat">
+            <div class="leftmeat">
+                <span class="title">Contact Us</span>
+                <span class="contact">
+                    <img src="src/phone.png" alt="Phone Call" name="phone" class="icon">
+                    <label class="subtitle" for="phone">(+251) 91 234 5678</label>
+                </span>
+                <span class="contact">
+                    <img src="src/email.png" alt="Email" name="email" class="icon">
+                    <label class="subtitle" for="email">randomemail@gmail.com</label>
+                </span>
+                <span class="contact">
+                    <img src="src/website.png" alt="Website" name="website" class="icon">
+                    <label class="subtitle" for="website"><a href="#" class="link">www.coolwebsite.com</a></label>
+                </span>
+                <span class="contact">
+                    <img src="src/location.png" alt="Address" name="address" class="icon">
+                    <label class="subtitle" for="address">123rd Street, Addis Ababa, Ethiopia</label>
+                </span>
+                <span class="contact socials">
+                    <a href="#" class="link"><img src="src/github.png" alt="Github" class="social" width="4em" height="4em"></a>
+                    <a href="#" class="link"><img src="src/instagram.png" alt="Instagram" class="social" width="4em" height="4em"></a>
+                    <a href="#" class="link"><img src="src/facebook.png" alt="Facebook" class="social" width="4em" height="4em"></a>
+                    <a href="#" class="link"><img src="src/twitter.png" alt="Twitter" class="social" width="4em" height="4em"></a>
+                </span>
+            </div>
+            <div class="rightmeat">
+                <form action="submit">
+                    <span class="title">Send Us a Message (<a href="#" class="link">FAQ</a>)</span>
+                    <span class="form"><input class="subtitle" type="text" name="name" id="name" placeholder="Name"></span>
+                    <span class="form"><input class="subtitle" type="text" name="email" id="email" placeholder="Email"></span>
+                    <span class="form"><input class="subtitle" type="text" name="subject" id="subject" placeholder="Subject"></span>
+                    <span class="form"><textarea class="subtitle" name="message" id="message">Enter your message here.</textarea></span>
+                    <span class="form"><input class="subtitle" type="submit" value="Submit"></span>
+                </form>
+            </div>
+        </div>
+        <nav class="bottombar">
+            <p class="title">NIMBUS<sup class="subtitle">&copy;</sup></p>
+            <span class="spacer"></span>
+            <span class="spacer"></span>
+            <span class="spacer"></span>
+            <div class="rightbottom">
+                <p class="subtitle"><a href="#" class="link subtitle">About Me</a></p>
+                <p class="subtitle"><a href="#" class="link subtitle">Projects</a></p>
+            </div>
+        </nav>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

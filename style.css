@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+body {
+    background-image: url("src/clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 50%;
+}
+
+.title {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: black;
+    margin: 1vw 4vw;
+}
+
+:not(.leftmeat .title) {
+    flex-grow: 1;
+}
+
+.subtitle {
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    margin: 8px;
+}
+
+.text {
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    margin: 4px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    color: hsl(0, 0%, 30%);
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.wrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 60%;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.navbar {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: hsl(156, 10%, 90%);
+    border-radius: 0 0 4rem 4rem;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar.active {
+    border-radius: 0 0 0 2rem;
+}
+
+.bottombar {
+    position: unset;
+    margin-bottom: 0;
+    bottom: 0;
+    opacity: 100%;
+    width: 100%;
+    background: hsl(156, 10%, 90%);
+    border-radius: 4rem 4rem 0 0;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightnav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    overflow: visible;
+}
+
+.rightbottom {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    overflow: visible;
+}
+
+#drawericon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+}
+
+/* .drawer {
+    position: relative;
+} */
+
+.dropdown {
+    /* display: none; */
+    position: absolute;
+    right: 100vw;
+    top: 15vh;
+    transition: all 0.5s ease-in-out;
+    z-index: 15;
+}
+
+.dropdown.active {
+    /* display: inline; */
+    right: 0;
+    z-index: 10;
+}
+
+.dropdown ul{
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    background-color: white;
+    border: 1px black solid;
+    border-right: 0;
+    border-radius: 0 0 0 1vw;
+    z-index: 15;
+}
+
+.dropdown ul li{
+    /* background-color: lightgray; */
+    /* border-top: 1px black solid; */
+    text-align: right;
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 0 0 0 1vw;
+    cursor: pointer;
+    z-index: 15;
+}
+
+.meat {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    display: flex;
+    /* background-color: white; */
+    opacity: 100%;
+    z-index: 1;
+    gap: 2vw;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+
+.leftmeat, .rightmeat {
+    background-color: white;
+    padding: 2em;
+    border-radius: 2vw;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.leftmeat {
+    align-items: baseline;
+    padding-top: 2em;
+}
+
+.rightmeat {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+}
+
+.form {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form > * {
+    /* border-radius: 1rem; */
+    padding: 1rem;
+    width: 90%;
+    text-align: left;
+}
+
+.form > :not(input[type="submit"]) {
+    /* background-blend-mode:exclusion; */
+    background-color: hsl(0, 0%, 100%);
+    border: 0.25rem black solid !important;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    color: hsl(0, 0%, 25%);
+    border: none;
+}
+
+.form > input[type="submit"]{
+    background-color: black;
+    text-align: center;
+    color: white;
+    border: none !important;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2em;
+    gap: 4em;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    /* gap: 2em; */
+}
+
+.social {
+    width: 4em;
+    height: 4em;
+}
+
+.icon {
+    width: 3em;
+    height: 3em;
+}
