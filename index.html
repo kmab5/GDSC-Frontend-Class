@@ -19,7 +19,7 @@
                 <p class="subtitle"><a href="#" class="link subtitle">Services</a></p>
                 <p class="subtitle"><a href="index.html" class="link subtitle">Contact Us</a></p>
                 <span class="drawer">
-                    <img src="src/drawer.png" alt="drawer" id="drawericon">
+                    <img src="src/drawer.png" alt="drawer" id="drawericon" class="icon">
                     <span class="dropdown">
                         <ul>
                             <li class="subtitle"><a href="#" class="link">About Me</a></li>
@@ -58,10 +58,10 @@
                 </span>
             </div>
             <div class="rightmeat">
-                <form action="submit">
+                <form id="messageform" onsubmit="e => this.preventDefault()">
                     <span class="title">Send Us a Message (<a href="#" class="link">FAQ</a>)</span>
-                    <span class="form"><input class="subtitle" type="text" name="name" id="name" placeholder="Name"></span>
-                    <span class="form"><input class="subtitle" type="text" name="email" id="email" placeholder="Email"></span>
+                    <span class="form"><input class="subtitle" type="text" name="name" id="name" placeholder="Name" autofill></span>
+                    <span class="form"><input class="subtitle" type="email" name="email" id="email" placeholder="Email"></span>
                     <span class="form"><input class="subtitle" type="text" name="subject" id="subject" placeholder="Subject"></span>
                     <span class="form"><textarea class="subtitle" name="message" id="message">Enter your message here.</textarea></span>
                     <span class="form"><input class="subtitle" type="submit" value="Submit"></span>
@@ -76,6 +76,7 @@
             <div class="rightbottom">
                 <p class="subtitle"><a href="#" class="link subtitle">About Me</a></p>
                 <p class="subtitle"><a href="#" class="link subtitle">Projects</a></p>
+                <span style="display: inline;"><img src="src/favicon3.png" alt="Icon" class="icon"></span>
             </div>
         </nav>
     </div>

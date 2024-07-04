@@ -1,3 +1,7 @@
+:root {
+    --col: darkgreen;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -71,7 +75,7 @@ body {
     width: 100%;
     background: hsl(156, 10%, 90%);
     border-radius: 0 0 4rem 4rem;
-    height: 15vh;
+    height: 18vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,14 +87,13 @@ body {
 }
 
 .bottombar {
-    position: unset;
     margin-bottom: 0;
-    bottom: 0;
+    overflow: hidden;
     opacity: 100%;
     width: 100%;
     background: hsl(156, 10%, 90%);
     border-radius: 4rem 4rem 0 0;
-    height: 12vh;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,7 +131,7 @@ body {
     /* display: none; */
     position: absolute;
     right: 100vw;
-    top: 15vh;
+    top: 18vh;
     transition: all 0.5s ease-in-out;
     z-index: 15;
 }
@@ -220,13 +223,30 @@ body {
     border-left: 0 !important;
     color: hsl(0, 0%, 25%);
     border: none;
+    transition: all 0.25s ease-in-out;
 }
+
+.form > :not(input[type="submit"]):focus {
+    /* background-blend-mode:exclusion; */
+    background-color: hsl(0, 0%, 90%);
+    border: 0.25rem rgb(41, 41, 41) solid !important;
+    color: hsl(0, 0%, 0%);
+    border-radius: 1rem;
+}
+
 
 .form > input[type="submit"]{
     background-color: black;
     text-align: center;
     color: white;
     border: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.form > input[type="submit"]:hover {
+    background-color: rgb(41, 41, 41);
+    color: rgb(255, 196, 129);
+    border-radius: 1rem;
 }
 
 .contact {
@@ -249,7 +269,42 @@ body {
     height: 4em;
 }
 
+.social:hover {
+    animation: shake 0.4s ease-in-out;
+}
+
 .icon {
-    width: 3em;
-    height: 3em;
+    width: 2vw;
+    height: 2vw;
+}
+
+.icon:hover {
+    animation: popup 0.4s ease-in-out;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(100%);
+    }
+    50% {
+        transform: scale(115%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(7deg);
+    }
+    67% {
+        transform: rotate(-7deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
